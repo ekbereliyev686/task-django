@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{% url 'test' %}" method="POST">
+        {% csrf_token %}
+    <h1 name="sual1">Sual 1
+        <br>
+        <input type="radio" value="a" name="sual1">A<br>
+        <input type="radio" value="b" name="sual1">B<br>
+        <input type="radio" value="c" name="sual1">C<br>
+        <input type="radio" value="d" name="sual1">D<br>
+
+    </h1>
+    <h1 >Sual 2
+      <br>
+        <input type="radio" value="a" name="sual2">A<br>
+        <input type="radio" value="b" name="sual2">B<br>
+        <input type="radio" value="c" name="sual2">C<br>
+        <input type="radio" value="d" name="sual2">D<br>
+
+    </h1>
+    
+    <button>Tesdiq Et</button>
+</form>
+<h1>Duzgun Cavab :{{duzgun}}   Sehv Cavab:{{sehf}}
+    <br>Bal {{bal}}
+</h1>
+
+</body>
+</html>
